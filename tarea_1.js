@@ -1,4 +1,5 @@
-function primo(a) {
+////pregunta 1////
+/*function primo(a) {
     //revisa si n es multiplo de 2
     for (var i = 2; i < a; i++) {
         if (a % i == 0)
@@ -11,4 +12,14 @@ if (primo(4) == true) {
 }
 else {
     console.log("No es primo");
+}*/
+function inv_cad(cadena) {
+    var x = cadena.length;
+    var cadenaInvertida = " ";
+    while (x >= 0) {
+        cadenaInvertida = cadenaInvertida + cadena.charAt(x);
+        x--;
+    }
+    return cadenaInvertida;
 }
+console.log(inv_cad("perro"));
